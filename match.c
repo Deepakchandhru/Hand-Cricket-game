@@ -15,7 +15,7 @@ int bat(int target){
 
         if(a>10){
             printf("Hit wicket for %d runs.\n",score);
-            insert(score);
+            insert(score,'O');
             if(target!=-1){
                 if(target==score){
                     printf("\t Match drawn. \n");
@@ -32,7 +32,7 @@ int bat(int target){
 
         if(a==b){
             printf("Well played innings of %d runs.\n",score);
-            insert(score);
+            insert(score,'O');
             if(target!=-1){
                 if(target==score){
                     printf("\t Match drawn. \n");
@@ -54,7 +54,7 @@ int bat(int target){
         if(target>-1){
             if(score>target){
                 printf("\t\t You won the match.\n");
-                insert(score);
+                insert(score,'N');
                 push('W');
                 return score;
             }else{
