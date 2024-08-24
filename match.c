@@ -161,9 +161,7 @@ void match(){
 
 
 void main(){
-    header h;
-    stack s;
-    create();
+    createlist();
     createstack();
     int ch;
     do{
