@@ -12,7 +12,7 @@ node new,temp;
 typedef node header;
 header h;
 
-void create(){
+void createlist(){
 h=(header) malloc(sizeof(struct noderec));
 h->next=h;
 }
